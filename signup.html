@@ -8,7 +8,9 @@
     <title>Document</title>
 </head>
 <body>
-
+    <video id="background-video" autoplay loop muted>
+        <source src="vid-bg.mp4" type="video/mp4">
+      </video>
     <main class="vh-100 d-flex justify-content-center">
         <div class="form-contain w-50 my-5 py-5 h-50">
             <h1 class="fs-1 text-info text-center">Sign-Up Now!</h1>
@@ -17,9 +19,9 @@
                 <input type="email" id="SignEmail" placeholder="Your E-mail" class="form-control my-3 w-75 m-auto">
                 <input type="password" id="SignPassword" placeholder="Password" class="form-control my-3 w-75 m-auto">
                 <p class="text-warning d-none justify-content-center" id="InvalidMail">Invalid E-mail Address</p>
-                <p class="text-success d-none justify-content-center" id="Success">SUCCESS!</p>
+                <p class="text-success d-none justify-content-center" id="Success">SUCCESS! <span id="signUp"><a href="index.html" class="text-decoration-none text-info">Login!</a></span></p>
                 <div class="btn-contain d-flex justify-content-center align-items-center">
-                    <button class="btn btn-info w-75" id="SignBtn" type="button">Sign Up</button>
+                <button class="btn btn-info w-75" id="SignBtn" type="button">Sign Up </button>
                 </div>
             </form>
         </div>
